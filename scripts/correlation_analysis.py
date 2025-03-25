@@ -59,9 +59,10 @@ plt.xlabel("Vancouver Sea Level (m)")
 plt.ylabel("St. John's Sea Level (m)")
 plt.title("Correlation between Vancouver and St. John's Sea Levels")
 # plt.grid(True)
+plt.savefig('van_sj_sealvl_corr.png')
 plt.show()
 
-plt.savefig('van_sj_sealvl_corr.png')
+
 
 
 # RESEARCH Q5 : linear correlation between Vancouver temperature and ONI
@@ -81,9 +82,10 @@ seaborn.regplot(x=combined_data["mean_temp"], y=combined_data["oni"])
 plt.xlabel("Vancouver Temperature (ºC)")
 plt.ylabel("Oceanic Nino Index")
 plt.title("Correlation between Vancouver Air Temperature and Oceanic Nino Index")
+plt.savefig('vantemp_oni_corr.png')
 plt.show()
 
-plt.savefig('vantemp_oni_corr.png')
+
 
 
 # RESEARCH Q6 : linear correlation between St John's temperature and INO
@@ -99,7 +101,8 @@ seaborn.regplot(x=combined_data["mean_temp"], y=combined_data["oni"])
 plt.xlabel("St. John's Temperature (ºC)")
 plt.ylabel("Oceanic Nino Index")
 plt.title("Correlation between St John's Air Temperature and Oceanic Nino Index")
+plt.savefig('sjtemp_oni_corr.png')
 plt.show()
 
-plt.savefig('sjtemp_oni_corr.png')
+
 
